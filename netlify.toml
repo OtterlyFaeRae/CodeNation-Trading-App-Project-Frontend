@@ -1,4 +1,2 @@
-[[redirects]]
-from = “/*”
-to = “/public/index.html”
-status = 200
+[build]
+publish="public
