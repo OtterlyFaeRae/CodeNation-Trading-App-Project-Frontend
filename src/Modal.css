@@ -1,0 +1,71 @@
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+.Insufficent {
+    font-size: 50px;
+}
+
+.valid-ammount {
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+
+.closeUnsuccessful {
+    background-color: #5e5def;
+    border: none;
+    color: whitesmoke;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 90px;
+    position: relative;
+    left: 125px;
+    cursor: pointer;
+    border-radius: 16px;
+
+}
+
+.noMoney {
+    width:7em;
+    height:7em;
+    position:relative;
+    left:200px;
+
+}
+
+.yesMoney {
+    width:8em;
+    height:8em;
+    position:relative;
+    left:250px;
+}
+
+.closeSuccessful {
+    background-color: #5e5def;
+    border: none;
+    color: whitesmoke;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 90px;
+    position: relative;
+    left: 50px;
+    Top: 20px;
+    cursor: pointer;
+    border-radius: 16px;
+}
