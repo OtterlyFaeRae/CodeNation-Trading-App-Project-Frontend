@@ -24,7 +24,7 @@ import { createGlobalStyle } from "styled-components"
 
 // ------------------------------------------------------------------- //
 function App() {
-	// login setup, determines if you are logged in, #TODO --> connect it with backend login function
+	// login setup, determines if you are logged in
 	// state hooked variables
 	const [isLoggedIn, setIsLoggedIn] = useState(true);
 	const [cookies, setCookie] = useCookies(["token"]);
