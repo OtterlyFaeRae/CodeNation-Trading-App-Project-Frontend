@@ -13,14 +13,31 @@ function Landing({ setIsLoggedIn, isLoggedIn, logOut, user }) {
         user={user}
 			/>
 			<Content>
-				<Header1>Welcome to TradeWarZ</Header1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tellus quam, eleifend nec tincidunt ut, cursus vel risus. Sed scelerisque congue efficitur. Quisque ultricies nisi vitae dolor sagittis sollicitudin. Sed dignissim porttitor mattis. Aliquam feugiat, nunc quis aliquam vehicula, tellus nisi auctor ex, sit amet volutpat magna justo sed leo. Quisque in libero ipsum. Sed ut euismod turpis. Proin dictum porta dui, eget malesuada risus malesuada in. Duis eget auctor lacus. Nunc eleifend interdum sagittis. Etiam fermentum porttitor sagittis.
-				</p>
-				<p>Above would be an intro and some instructions for how the app works</p>
-				<p>Final Code Nation project by Liam, Mahed, Mohammed, Saoirse and Shaun</p>
-				<Button2>Buy some stocks!</Button2>
-			</Content>
+          <Header1>Welcome to TradeWarZ</Header1>
+          <P>
+            TradeWarZ is a trading simulator where you can buy and sell stocks on
+            the New York Stock Exchange.
+          </P>
+          <P>We then keep track of the real-time value of your portfolio!</P>
+          <P>You start with $5000 which is yours to invest however you want.</P>
+          <P>Hit the button below to get started.</P>
+          <Button2 href="/buy">Buy some stocks!</Button2>
+          <P>
+            The NYSE is open from 14:30-21:00 GMT, so you'll see your portfolio
+            changing then!
+          </P>
+          <P>To delete your account, type 'del' + press 'Enter'.</P>
+          <P>
+            Data is provided for free by Finnhub Stock API. View Finnhub's{" "}
+            <Terms
+              href="https://finnhub.io/terms-of-service#:~:text=You%20hereby%20agree%20to%20not,use%20unless%20explicitly%20stated%20otherwise"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              terms of service.
+            </Terms>
+          </P>
+        </Content>
 		</Cont>
 	);
 }
@@ -84,3 +101,34 @@ const Button2 = styled.button`
   border: 0;
   margin-right: 15px;
 `
+
+const Terms = styled.a`
+  font-weight: bold;
+  color: #5e5df0;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 7px;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #5e5df0;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  &:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+`;
+
+const P = styled.p`
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: smaller;
+  }
+`;
